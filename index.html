@@ -3,125 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Método de Monte Carlo - Estilo Catálogo</title>
+    <title>Método de Monte Carlo - Catálogo Interactivo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Método de Monte Carlo</h1>
-    <h2>Explora los Conceptos Clave</h2>
+    <h1>Método de Monte Carlo: Una Odisea Aleatoria</h1>
+    <h2>Descubre sus secretos y poder</h2>
 </header>
 
 <div class="cards-container">
 
     <div class="info-card" id="introduccion">
-        <img src="https://placehold.co/600x360/52bf90/1f2937?text=Introducción" alt="Imagen abstracta para Introducción" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
+        <div class="card-header">
             <h2>Introducción al Método</h2>
-            <p>Una poderosa técnica computacional basada en la <strong>aleatoriedad</strong> para modelar y resolver problemas complejos. Invaluable cuando las soluciones analíticas son intratables.</p>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/53a8b6/1a1a2e?text=Bienvenida" alt="[Imagen de Bienvenida]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>El Método de Monte Carlo es una clase amplia de algoritmos computacionales que dependen del <strong>muestreo aleatorio repetido</strong> para obtener resultados numéricos. Su esencia radica en usar la aleatoriedad para resolver problemas que podrían ser determinísticamente complejos o imposibles.</p>
+                <p>Imagina lanzar un dado miles de veces para estimar la probabilidad de cada cara; Monte Carlo aplica este principio a problemas mucho más abstractos y multidimensionales.</p>
+            </div>
         </div>
     </div>
 
     <div class="info-card" id="definicion">
-        <img src="https://placehold.co/600x360/4a5568/e5e7eb?text=Definición" alt="Imagen abstracta para Definición" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
+         <div class="card-header">
             <h2>¿Qué es Exactamente?</h2>
-            <p>Un método estadístico que usa muestreo aleatorio repetido para obtener resultados numéricos. Simula un proceso múltiples veces para estimar probabilidades.</p>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/1e3a5f/e0e0fc?text=Definición" alt="[Imagen de Definición]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>Formalmente, los métodos Monte Carlo se utilizan para encontrar soluciones aproximadas a problemas cuantitativos mediante la realización de <strong>experimentos estadísticos</strong> en una computadora.</p>
+                <p>Son especialmente útiles para:</p>
+                <ul>
+                    <li>Simular sistemas con componentes aleatorios (ej. mercados financieros, difusión de partículas).</li>
+                    <li>Evaluar integrales multidimensionales complejas.</li>
+                    <li>Optimizar funciones con muchos parámetros o restricciones.</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <div class="info-card" id="origen">
-        <img src="https://placehold.co/600x360/a0aec0/1f2937?text=Origen" alt="Imagen abstracta para Origen" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
+     <div class="info-card" id="origen">
+         <div class="card-header">
             <h2>Un Nombre con Historia</h2>
-            <p>Su nombre evoca el Casino de Monte Carlo. Formalizado durante el Proyecto Manhattan (1940s) por Ulam, von Neumann y Metropolis.</p>
+             <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/a7aedc/1a1a2e?text=Origen" alt="[Imagen de Origen]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>El nombre, acuñado por Nicholas Metropolis, hace referencia al famoso <strong>Casino de Monte Carlo</strong> en Mónaco. La conexión es la naturaleza intrínsecamente aleatoria y probabilística tanto de los juegos de azar como del método.</p>
+                <p>Fue desarrollado sistemáticamente durante el <strong>Proyecto Manhattan</strong> (década de 1940) por científicos como John von Neumann, Stanislaw Ulam y el propio Metropolis, inicialmente para modelar la difusión de neutrones en material fisible.</p>
+            </div>
         </div>
     </div>
 
-    <div class="info-card" id="aplicaciones">
-         <img src="https://placehold.co/600x360/93c5fd/1f2937?text=Aplicaciones" alt="Imagen abstracta para Aplicaciones" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
-            <h2>Campos de Aplicación</h2>
-            <ul>
-                <li><strong>Finanzas:</strong> Valoración de derivados, riesgo (VaR).</li>
-                <li><strong>Ciencias Físicas:</strong> Simulación de partículas.</li>
-                <li><strong>Ingeniería:</strong> Fiabilidad, optimización.</li>
-                <li><strong>Computación:</strong> Gráficos, IA.</li>
-                <li><strong>Biología:</strong> Plegamiento de proteínas.</li>
-            </ul>
+    <div class="info-card" id="rng">
+         <div class="card-header">
+            <h2>Corazón Aleatorio: RNG</h2>
+             <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/f5a623/1a1a2e?text=RNG" alt="[Imagen de Generación de Números Aleatorios]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>La calidad de una simulación Monte Carlo depende críticamente de la calidad de sus <strong>números (pseudo)aleatorios</strong>.</p>
+                <p>Se utilizan Generadores de Números Pseudoaleatorios (PRNGs) que producen secuencias de números que *parecen* aleatorios pero son generados por un algoritmo determinista a partir de una 'semilla' (seed).</p>
+                <h3>Características deseables de un PRNG:</h3>
+                <ul>
+                    <li>Periodo largo (la secuencia no se repite pronto).</li>
+                    <li>Buenas propiedades estadísticas (uniformidad, independencia).</li>
+                    <li>Eficiencia computacional.</li>
+                    <li>Reproducibilidad (dada la misma semilla).</li>
+                </ul>
+                <p>Algoritmos comunes incluyen el Mersenne Twister.</p>
+            </div>
         </div>
     </div>
 
     <div class="info-card" id="proceso">
-        <img src="https://placehold.co/600x360/fcd34d/1f2937?text=Proceso" alt="Imagen abstracta para Proceso" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
-            <h2>El Proceso Básico</h2>
-            <ol>
-                <li>Definir Dominio</li>
-                <li>Generar Entradas Aleatorias</li>
-                <li>Realizar Cálculo/Simulación</li>
-                <li>Agregar Resultados</li>
-            </ol>
+         <div class="card-header">
+            <h2>El Proceso Detallado</h2>
+             <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/9ef0f0/1a1a2e?text=Proceso" alt="[Imagen de Proceso]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>Aunque varía según la aplicación, el flujo general es:</p>
+                <ol>
+                    <li><strong>Definir el Modelo y el Dominio:</strong> Crear un modelo matemático (ecuación, sistema) del problema. Identificar las variables inciertas y sus distribuciones de probabilidad (ej. normal, uniforme).</li>
+                    <li><strong>Generar Muestras Aleatorias:</strong> Usar un PRNG para generar valores para las variables inciertas según sus distribuciones. Para distribuciones no uniformes, se usan técnicas como la Transformada Inversa o Rechazo.</li>
+                    <li><strong>Realizar la Simulación Determinista:</strong> Ejecutar el modelo con el conjunto específico de valores aleatorios generados. Calcular el resultado para *esta* simulación particular.</li>
+                    <li><strong>Repetir y Agregar:</strong> Repetir los pasos 2 y 3 muchas veces (miles o millones). Acumular los resultados de cada simulación.</li>
+                    <li><strong>Analizar Resultados:</strong> Calcular estadísticas sobre los resultados acumulados (media, mediana, desviación estándar, percentiles, histogramas) para obtener la respuesta final y su incertidumbre.</li>
+                </ol>
+            </div>
         </div>
     </div>
 
-    <div class="info-card" id="ventajas">
-        <img src="https://placehold.co/600x360/86efac/1f2937?text=Pros+%26+Contras" alt="Imagen abstracta para Ventajas y Desventajas" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
-            <h2>Ventajas y Desventajas</h2>
-            <h3>Pros</h3>
-            <ul>
-                <li>Maneja alta dimensionalidad.</li>
-                <li>Modela incertidumbre.</li>
-                <li>Resuelve problemas intratables.</li>
-            </ul>
-            <h3>Contras</h3>
-            <ul>
-                <li>Intensivo computacionalmente.</li>
-                <li>Convergencia lenta ( O(1 sqrt{N}) ).</li>
-                <li>Depende del generador aleatorio.</li>
-            </ul>
+    <div class="info-card" id="aplicaciones">
+         <div class="card-header">
+            <h2>Campos de Aplicación</h2>
+             <span class="toggle-icon">▼</span>
+        </div>
+         <img src="https://placehold.co/600x360/86efac/1a1a2e?text=Aplicaciones" alt="[Imagen de Aplicaciones]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>Su versatilidad es enorme:</p>
+                <ul>
+                    <li><strong>Finanzas:</strong> Valoración de opciones exóticas, riesgo de crédito (CVA/DVA), optimización de carteras.</li>
+                    <li><strong>Ingeniería:</strong> Propagación de tolerancias, fiabilidad de sistemas complejos, flujo de tráfico.</li>
+                    <li><strong>Física y Química:</strong> Simulación de sistemas de partículas, dinámica molecular, transporte radiativo.</li>
+                    <li><strong>Computación Gráfica:</strong> Renderizado por trazado de rayos (Path Tracing) para iluminación global realista.</li>
+                    <li><strong>Biología:</strong> Modelado de poblaciones, estudios epidemiológicos, plegamiento de proteínas.</li>
+                    <li><strong>Estadística Bayesiana:</strong> Métodos MCMC para estimar distribuciones a posteriori.</li>
+                    <li><strong>Investigación Operativa:</strong> Simulación de colas, optimización logística.</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="info-card" id="tipos">
-        <img src="https://placehold.co/600x360/c4b5fd/1f2937?text=Tipos" alt="Imagen abstracta para Tipos de Métodos" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
-            <h2>Variantes del Método</h2>
-            <ul>
-                <li>Monte Carlo Crudo</li>
-                <li>Muestreo por Importancia</li>
-                <li>MCMC (Metropolis-Hastings, Gibbs)</li>
-                <li>Monte Carlo Secuencial</li>
-                <li>Cuasi-Monte Carlo</li>
-            </ul>
+         <div class="card-header">
+            <h2>Variantes y Refinamientos</h2>
+             <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/c4b5fd/1a1a2e?text=Variantes" alt="[Imagen de Variantes]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>Más allá del Monte Carlo "crudo":</p>
+                <ul>
+                    <li><strong>Muestreo por Importancia:</strong> Concentra las muestras en regiones que contribuyen más al resultado, reduciendo la varianza. Útil si ciertas áreas son raras pero importantes.</li>
+                    <li><strong>MCMC (Markov Chain Monte Carlo):</strong> Ideal para muestrear distribuciones complejas y multidimensionales, especialmente en inferencia Bayesiana. Construye una cadena de estados donde el siguiente estado depende solo del actual, convergiendo a la distribución deseada. Algoritmos: Metropolis-Hastings, Gibbs Sampling.</li>
+                    <li><strong>Métodos Cuasi-Monte Carlo:</strong> Usan secuencias deterministas de baja discrepancia (ej. Sobol, Halton) en lugar de pseudoaleatorias. Llenan el espacio de muestreo de forma más uniforme, logrando a menudo una convergencia más rápida (cercana a $O(1/N)$) para ciertos problemas como la integración.</li>
+                    <li><strong>Monte Carlo Multinivel (MLMC):</strong> Combina simulaciones a diferentes niveles de precisión (y coste computacional) para optimizar el esfuerzo total y reducir la varianza.</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <div class="info-card" id="ejemplos">
-        <img src="https://placehold.co/600x360/f9a8d4/1f2937?text=Ejemplos" alt="Imagen abstracta para Ejemplos" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
-            <h2>Ejemplos Prácticos</h2>
-            <ul>
-                <li>Estimación de pi</li>
-                <li>Integración Numérica</li>
-                <li>Simulación de Proyectos (PERT)</li>
-            </ul>
+    <div class="info-card" id="variance-reduction">
+         <div class="card-header">
+            <h2>Mejorando la Precisión</h2>
+             <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/f9a8d4/1a1a2e?text=Precisión" alt="[Imagen de Reducción de Varianza]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>Dado que la precisión de Monte Carlo mejora lentamente con el número de muestras ($N$), las técnicas de <strong>reducción de varianza</strong> son cruciales para obtener resultados fiables con menos cómputo.</p>
+                <h3>Técnicas Comunes:</h3>
+                <ul>
+                    <li><strong>Variables Antitéticas:</strong> Introduce correlación negativa entre pares de muestras. Si una muestra da un valor alto, la siguiente (generada antitéticamente) tiende a dar uno bajo, reduciendo la fluctuación general.</li>
+                    <li><strong>Variables de Control:</strong> Usa una variable relacionada (con valor esperado conocido) para ajustar el estimador. Si la variable de control está por encima de su media, se asume que la variable de interés también lo está, y se corrige.</li>
+                    <li><strong>Muestreo Estratificado:</strong> Divide el dominio de entrada en subregiones (estratos) y muestrea un número fijo de puntos en cada una. Asegura que todas las partes del dominio estén representadas.</li>
+                    <li><strong>Muestreo por Importancia (ya mencionado):</strong> Re-pondera las muestras para enfocarse en las regiones más significativas.</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <div class="info-card" id="limitaciones">
-        <img src="https://placehold.co/600x360/fca5a5/1f2937?text=Limitaciones" alt="Imagen abstracta para Limitaciones" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
+     <div class="info-card" id="ventajas">
+         <div class="card-header">
+            <h2>Pros y Contras</h2>
+             <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/6ee7b7/1a1a2e?text=Balance" alt="[Imagen de Pros y Contras]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <h3>Ventajas Clave</h3>
+                <ul>
+                    <li>Conceptualemente simple y flexible.</li>
+                    <li>Maneja fácilmente alta dimensionalidad (la "maldición de la dimensionalidad" afecta menos que a métodos de cuadrícula).</li>
+                    <li>Permite modelar incertidumbres complejas y correlaciones.</li>
+                    <li>Proporciona no solo un valor, sino una distribución de posibles resultados.</li>
+                </ul>
+                <h3>Desventajas y Retos</h3>
+                <ul>
+                    <li>Convergencia lenta ($O(1/\sqrt{N})$ para MC crudo).</li>
+                    <li>Puede ser muy costoso computacionalmente.</li>
+                    <li>Requiere un buen generador de números aleatorios.</li>
+                    <li>Los resultados son probabilísticos, no exactos.</li>
+                    <li>Implementar técnicas de reducción de varianza puede ser complejo.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-card" id="software">
+        <div class="card-header">
+            <h2>Herramientas del Oficio</h2>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/fca5a5/1a1a2e?text=Software" alt="[Imagen de Software]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>Implementar Monte Carlo es accesible con muchas herramientas:</p>
+                <ul>
+                    <li><strong>Python:</strong> El rey actual. Bibliotecas como <code>NumPy</code> (arrays, RNG), <code>SciPy</code> (estadísticas, distribuciones), <code>Pandas</code> (manejo de datos), y especializadas como <code>PyMC</code> (MCMC), <code>SALib</code> (análisis de sensibilidad).</li>
+                    <li><strong>R:</strong> Fuerte en estadística, con vastos paquetes para simulación y análisis.</li>
+                    <li><strong>MATLAB:</strong> Entorno popular en ingeniería y academia, con toolboxes específicos.</li>
+                    <li><strong>Excel con Add-ins:</strong> @RISK, Crystal Ball para análisis de riesgo en hojas de cálculo.</li>
+                    <li><strong>Lenguajes Compilados (C++, Fortran, Julia):</strong> Para simulaciones de muy alto rendimiento.</li>
+                </ul>
+                <button class="interactive-button" onclick="alert('¡NumPy es fundamental en Python para Monte Carlo! `np.random.rand()` es tu amigo.')">Tip Python</button>
+            </div>
+        </div>
+    </div>
+
+     <div class="info-card" id="limitaciones">
+        <div class="card-header">
             <h2>Consideraciones Finales</h2>
-            <p>La precisión depende del número de simulaciones ( N ) y la calidad del modelo. Es crucial validar ambos aspectos.</p>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/fde047/1a1a2e?text=Cuidado" alt="[Imagen de Limitaciones]" class="card-image">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>Monte Carlo es poderoso, pero no mágico. Su éxito depende de:</p>
+                <ul>
+                    <li><strong>Calidad del Modelo:</strong> Si el modelo subyacente es incorrecto, la simulación también lo será ("Garbage In, Garbage Out").</li>
+                    <li><strong>Calidad del RNG:</strong> Un mal generador puede introducir sesgos sutiles.</li>
+                    <li><strong>Número Suficiente de Muestras:</strong> Se necesita $N$ grande para reducir el error estadístico, especialmente sin reducción de varianza.</li>
+                    <li><strong>Interpretación Correcta:</strong> Entender que los resultados son estimaciones con incertidumbre asociada.</li>
+                </ul>
+                <p>Siempre valida tu modelo y tu implementación cuidadosamente.</p>
+            </div>
         </div>
     </div>
 
 </div> <footer>
-    <p>&copy; 2024 Explorando el Método de Monte Carlo. Estilo Catálogo.</p>
+    <p>&copy; 2024 Explorando Monte Carlo</p>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
