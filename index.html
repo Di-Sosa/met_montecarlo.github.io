@@ -79,7 +79,7 @@
             <h3>Contras</h3>
             <ul>
                 <li>Intensivo computacionalmente.</li>
-                <li>Convergencia lenta ($O(1/\sqrt{N})$).</li>
+                <li>Convergencia lenta ( O(1 sqrt{N}) ).</li>
                 <li>Depende del generador aleatorio.</li>
             </ul>
         </div>
@@ -104,24 +104,10 @@
         <div class="card-content">
             <h2>Ejemplos Prácticos</h2>
             <ul>
-                <li>Estimación de $\pi$</li>
+                <li>Estimación de pi</li>
                 <li>Integración Numérica</li>
                 <li>Simulación de Proyectos (PERT)</li>
             </ul>
-        </div>
-    </div>
-
-    <div class="info-card" id="software">
-        <img src="https://placehold.co/600x360/6ee7b7/1f2937?text=Software" alt="Imagen abstracta para Software" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content">
-            <h2>Herramientas y Software</h2>
-            <ul>
-                <li>Python (NumPy, SciPy)</li>
-                <li>R, MATLAB, Julia</li>
-                <li>@RISK, Crystal Ball</li>
-                <li>PyMC, Stan</li>
-            </ul>
-            <button class="interactive-button" onclick="alert('NumPy y SciPy en Python son excelentes puntos de partida.')">Explorar Python</button>
         </div>
     </div>
 
@@ -129,7 +115,7 @@
         <img src="https://placehold.co/600x360/fca5a5/1f2937?text=Limitaciones" alt="Imagen abstracta para Limitaciones" class="card-image" onerror="this.style.display='none'">
         <div class="card-content">
             <h2>Consideraciones Finales</h2>
-            <p>La precisión depende del número de simulaciones ($N$) y la calidad del modelo. Es crucial validar ambos aspectos.</p>
+            <p>La precisión depende del número de simulaciones ( N ) y la calidad del modelo. Es crucial validar ambos aspectos.</p>
         </div>
     </div>
 
@@ -139,23 +125,3 @@
 
 </body>
 </html>
-```
-
-**Cambios Realizados:**
-
-1.  **Estructura HTML:**
-    * Se eliminó la barra `<nav>`.
-    * Se creó un `div` principal con la clase `cards-container`.
-    * Cada sección anterior ahora es un `div` con la clase `info-card`.
-    * Dentro de cada tarjeta, se añadió una imagen placeholder (`<img>`) y un `div` con la clase `card-content` para el texto.
-2.  **CSS:**
-    * **Layout:** Se usa `display: grid` en `.cards-container` con `grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));` para crear un grid responsivo que ajusta automáticamente el número de columnas.
-    * **Estilo de Tarjeta (`.info-card`):** Fondo oscuro, bordes redondeados, sombra, y lo más importante, una `transition` para las propiedades `transform` y `box-shadow`.
-    * **Efecto Hover:** Al pasar el ratón (`:hover`), la tarjeta se levanta ligeramente (`translateY`), se agranda un poco (`scale`) y la sombra se intensifica.
-    * **Imágenes:** Se añadió un estilo básico para las imágenes placeholder (`.card-image`).
-    * **Contenido de Tarjeta (`.card-content`):** Se usa `flex-direction: column` para organizar el contenido verticalmente. El botón se empuja hacia abajo con `margin-top: auto`.
-    * **Paleta de Colores:** Se cambió a un tema oscuro (`#1f2937`, `#374151`) más adecuado para un catálogo visual, con texto claro y el mismo color de acento verde azulado (`#52bf90`).
-    * **Tipografía:** Ajustes menores para encajar en el diseño de tarjeta.
-    * **Responsividad:** El grid se adapta automáticamente, pero se añadió una media query para reducir el padding y el gap en pantallas muy pequeñas.
-
-Ahora la página presenta la información en un formato de tarjetas visualmente atractivo, con efectos de transición suaves al interactuar con ell
