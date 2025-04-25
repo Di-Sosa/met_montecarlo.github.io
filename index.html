@@ -213,6 +213,43 @@
         </div>
     </div>
 
+    <div class="info-card" id="ejemplo">
+        <div class="card-header">
+            <h2>Ejemplo del Método</h2>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <img src="https://placehold.co/600x360/f9a8d4/1f2937?text=Ejemplos" alt="Imagen abstracta para Ejemplos" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content-wrapper">
+            <div class="card-content">
+                <p>Este es un ejemplo en Python para estimar el valor de π utilizando el Método de Monte Carlo. Puedes copiar y ejecutar este código en un entorno de Python:</p>
+                <pre><code class="language-python">
+import random
+import math
+
+
+for _ in range(puntos_totales):
+    # Generar coordenadas (x, y) 
+    aleatorias entre -1 y 1
+    x = random.uniform(-1, 1)
+    y = random.uniform(-1, 1)
+    
+    dentro del círculo (x² + y² <= 1)
+    if x**2 + y**2 <= 1:
+        puntos_dentro += 1
+
+pi_estimado = 4 * puntos_dentro / 
+puntos_totales
+
+print(f"Estimación de π: {pi_estimado}")
+print(f"Valor real de π: {math.pi}")
+print(f"Diferencia: {abs(math.pi - 
+    pi_estimado)}")
+                </code></pre>
+                <p>Este ejemplo demuestra cómo el Método de Monte Carlo puede ser utilizado para aproximar valores matemáticos complejos.</p>
+            </div>
+        </div>
+    </div>
+
      <div class="info-card" id="limitaciones">
         <div class="card-header">
             <h2>Consideraciones Finales</h2>
