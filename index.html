@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Monte Carlo - Estilo Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Método de Monte Carlo</h1>
+    <h2>Explora los Conceptos Clave</h2>
+</header>
+
+<div class="cards-container">
+
+    <div class="info-card" id="introduccion">
+        <img src="https://placehold.co/600x360/52bf90/1f2937?text=Introducción" alt="Imagen abstracta para Introducción" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>Introducción al Método</h2>
+            <p>Una poderosa técnica computacional basada en la <strong>aleatoriedad</strong> para modelar y resolver problemas complejos. Invaluable cuando las soluciones analíticas son intratables.</p>
+        </div>
+    </div>
+
+    <div class="info-card" id="definicion">
+        <img src="https://placehold.co/600x360/4a5568/e5e7eb?text=Definición" alt="Imagen abstracta para Definición" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>¿Qué es Exactamente?</h2>
+            <p>Un método estadístico que usa muestreo aleatorio repetido para obtener resultados numéricos. Simula un proceso múltiples veces para estimar probabilidades.</p>
+        </div>
+    </div>
+
+    <div class="info-card" id="origen">
+        <img src="https://placehold.co/600x360/a0aec0/1f2937?text=Origen" alt="Imagen abstracta para Origen" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>Un Nombre con Historia</h2>
+            <p>Su nombre evoca el Casino de Monte Carlo. Formalizado durante el Proyecto Manhattan (1940s) por Ulam, von Neumann y Metropolis.</p>
+        </div>
+    </div>
+
+    <div class="info-card" id="aplicaciones">
+         <img src="https://placehold.co/600x360/93c5fd/1f2937?text=Aplicaciones" alt="Imagen abstracta para Aplicaciones" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>Campos de Aplicación</h2>
+            <ul>
+                <li><strong>Finanzas:</strong> Valoración de derivados, riesgo (VaR).</li>
+                <li><strong>Ciencias Físicas:</strong> Simulación de partículas.</li>
+                <li><strong>Ingeniería:</strong> Fiabilidad, optimización.</li>
+                <li><strong>Computación:</strong> Gráficos, IA.</li>
+                <li><strong>Biología:</strong> Plegamiento de proteínas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info-card" id="proceso">
+        <img src="https://placehold.co/600x360/fcd34d/1f2937?text=Proceso" alt="Imagen abstracta para Proceso" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>El Proceso Básico</h2>
+            <ol>
+                <li>Definir Dominio</li>
+                <li>Generar Entradas Aleatorias</li>
+                <li>Realizar Cálculo/Simulación</li>
+                <li>Agregar Resultados</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="info-card" id="ventajas">
+        <img src="https://placehold.co/600x360/86efac/1f2937?text=Pros+%26+Contras" alt="Imagen abstracta para Ventajas y Desventajas" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>Ventajas y Desventajas</h2>
+            <h3>Pros</h3>
+            <ul>
+                <li>Maneja alta dimensionalidad.</li>
+                <li>Modela incertidumbre.</li>
+                <li>Resuelve problemas intratables.</li>
+            </ul>
+            <h3>Contras</h3>
+            <ul>
+                <li>Intensivo computacionalmente.</li>
+                <li>Convergencia lenta ($O(1/\sqrt{N})$).</li>
+                <li>Depende del generador aleatorio.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info-card" id="tipos">
+        <img src="https://placehold.co/600x360/c4b5fd/1f2937?text=Tipos" alt="Imagen abstracta para Tipos de Métodos" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>Variantes del Método</h2>
+            <ul>
+                <li>Monte Carlo Crudo</li>
+                <li>Muestreo por Importancia</li>
+                <li>MCMC (Metropolis-Hastings, Gibbs)</li>
+                <li>Monte Carlo Secuencial</li>
+                <li>Cuasi-Monte Carlo</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info-card" id="ejemplos">
+        <img src="https://placehold.co/600x360/f9a8d4/1f2937?text=Ejemplos" alt="Imagen abstracta para Ejemplos" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>Ejemplos Prácticos</h2>
+            <ul>
+                <li>Estimación de $\pi$</li>
+                <li>Integración Numérica</li>
+                <li>Simulación de Proyectos (PERT)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="info-card" id="software">
+        <img src="https://placehold.co/600x360/6ee7b7/1f2937?text=Software" alt="Imagen abstracta para Software" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>Herramientas y Software</h2>
+            <ul>
+                <li>Python (NumPy, SciPy)</li>
+                <li>R, MATLAB, Julia</li>
+                <li>@RISK, Crystal Ball</li>
+                <li>PyMC, Stan</li>
+            </ul>
+            <button class="interactive-button" onclick="alert('NumPy y SciPy en Python son excelentes puntos de partida.')">Explorar Python</button>
+        </div>
+    </div>
+
+    <div class="info-card" id="limitaciones">
+        <img src="https://placehold.co/600x360/fca5a5/1f2937?text=Limitaciones" alt="Imagen abstracta para Limitaciones" class="card-image" onerror="this.style.display='none'">
+        <div class="card-content">
+            <h2>Consideraciones Finales</h2>
+            <p>La precisión depende del número de simulaciones ($N$) y la calidad del modelo. Es crucial validar ambos aspectos.</p>
+        </div>
+    </div>
+
+</div> <footer>
+    <p>&copy; 2024 Explorando el Método de Monte Carlo. Estilo Catálogo.</p>
+</footer>
+
+</body>
+</html>
+```
+
+**Cambios Realizados:**
+
+1.  **Estructura HTML:**
+    * Se eliminó la barra `<nav>`.
+    * Se creó un `div` principal con la clase `cards-container`.
+    * Cada sección anterior ahora es un `div` con la clase `info-card`.
+    * Dentro de cada tarjeta, se añadió una imagen placeholder (`<img>`) y un `div` con la clase `card-content` para el texto.
+2.  **CSS:**
+    * **Layout:** Se usa `display: grid` en `.cards-container` con `grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));` para crear un grid responsivo que ajusta automáticamente el número de columnas.
+    * **Estilo de Tarjeta (`.info-card`):** Fondo oscuro, bordes redondeados, sombra, y lo más importante, una `transition` para las propiedades `transform` y `box-shadow`.
+    * **Efecto Hover:** Al pasar el ratón (`:hover`), la tarjeta se levanta ligeramente (`translateY`), se agranda un poco (`scale`) y la sombra se intensifica.
+    * **Imágenes:** Se añadió un estilo básico para las imágenes placeholder (`.card-image`).
+    * **Contenido de Tarjeta (`.card-content`):** Se usa `flex-direction: column` para organizar el contenido verticalmente. El botón se empuja hacia abajo con `margin-top: auto`.
+    * **Paleta de Colores:** Se cambió a un tema oscuro (`#1f2937`, `#374151`) más adecuado para un catálogo visual, con texto claro y el mismo color de acento verde azulado (`#52bf90`).
+    * **Tipografía:** Ajustes menores para encajar en el diseño de tarjeta.
+    * **Responsividad:** El grid se adapta automáticamente, pero se añadió una media query para reducir el padding y el gap en pantallas muy pequeñas.
+
+Ahora la página presenta la información en un formato de tarjetas visualmente atractivo, con efectos de transición suaves al interactuar con ell
