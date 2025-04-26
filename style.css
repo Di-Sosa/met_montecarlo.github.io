@@ -280,3 +280,54 @@
     padding: 0;
     border: 0;
 }
+
+/* Simulación interactiva */
+.simulation-controls {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+#puntos {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #53a8b6;
+    color: #e0e0fc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+#piCanvas {
+    background: #1a1a2e;
+    border: 2px solid #53a8b6;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.results {
+    background: rgba(83, 168, 182, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.results p {
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+.explicacion {
+    margin-top: 25px;
+    border-top: 1px solid #3b5998;
+    padding-top: 20px;
+}
+
+.explicacion h3 {
+    color: #9ef0f0;
+    margin-bottom: 10px;
+}
+
+#piCanvas {
+    width: 350px; 
+    height: 350px;  
+}
