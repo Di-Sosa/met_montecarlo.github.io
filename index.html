@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UT</div>F-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Método de Monte Carlo - Catálogo Interactivo</title>
     <link rel="stylesheet" href="style.css">
@@ -10,12 +10,18 @@
 
 <header>
     <h1>Método de Monte Carlo: Una Odisea Aleatoria</h1>
-    <h2>Descubre sus secretos y poder</h2>
+    <h2>Descubre sus sec</div>retos y poder</h2>
 </header>
+<div class="category-filter">
+    <button class="filter-btn active" data-category="todas">🌟 Todas</button>
+    <button class="filter-btn" data-category="basico">📚 Conceptos Básicos</button>
+    <button class="filter-btn" data-category="avanzado">🚀 Conceptos Avanzados</button>
+    <button class="filter-btn" data-category="ejemplos">💻 Ejemplos Prácticos</button>
+</div>
 
 <div class="cards-container">
 
-    <div class="info-card" id="introduccion">
+    <div class="info-card" id="introduccion" data-category="basico">
         <div class="card-header">
             <h2>Introducción al Método</h2>
             <span class="toggle-icon">▼</span>
@@ -29,7 +35,7 @@
         </div>
     </div>
 
-    <div class="info-card" id="definicion">
+    <div class="info-card" id="definicion" data-category="basico">
          <div class="card-header">
             <h2>¿Qué es Exactamente?</h2>
             <span class="toggle-icon">▼</span>
@@ -48,7 +54,7 @@
         </div>
     </div>
 
-     <div class="info-card" id="origen">
+     <div class="info-card" id="origen" data-category="basico">
          <div class="card-header">
             <h2>Un Nombre con Historia</h2>
              <span class="toggle-icon">▼</span>
@@ -62,7 +68,7 @@
         </div>
     </div>
 
-    <div class="info-card" id="rng">
+    <div class="info-card" id="rng" data-category="basico">
          <div class="card-header">
             <h2>Corazón Aleatorio: RNG</h2>
              <span class="toggle-icon">▼</span>
@@ -84,7 +90,7 @@
         </div>
     </div>
 
-    <div class="info-card" id="proceso">
+    <div class="info-card" id="proceso" data-category="basico">
          <div class="card-header">
             <h2>El Proceso Detallado</h2>
              <span class="toggle-icon">▼</span>
@@ -104,7 +110,7 @@
         </div>
     </div>
 
-    <div class="info-card" id="aplicaciones">
+    <div class="info-card" id="aplicaciones" data-category="basico">
          <div class="card-header">
             <h2>Campos de Aplicación</h2>
              <span class="toggle-icon">▼</span>
@@ -126,7 +132,7 @@
         </div>
     </div>
 
-    <div class="info-card" id="tipos">
+    <div class="info-card" id="tipos" data-category="avanzado">
          <div class="card-header">
             <h2>Variantes y Refinamientos</h2>
              <span class="toggle-icon">▼</span>
@@ -145,7 +151,7 @@
         </div>
     </div>
 
-    <div class="info-card" id="variance-reduction">
+    <div class="info-card" id="variance-reduction" data-category="avanzado">
          <div class="card-header">
             <h2>Mejorando la Precisión</h2>
              <span class="toggle-icon">▼</span>
@@ -165,7 +171,7 @@
         </div>
     </div>
 
-     <div class="info-card" id="ventajas">
+     <div class="info-card" id="ventajas" data-category="avanzado">
          <div class="card-header">
             <h2>Pros y Contras</h2>
              <span class="toggle-icon">▼</span>
@@ -192,7 +198,7 @@
         </div>
     </div>
 
-    <div class="info-card" id="software">
+    <div class="info-card" id="software" data-category="ejemplos">
         <div class="card-header">
             <h2>Herramientas del Oficio</h2>
             <span class="toggle-icon">▼</span>
@@ -213,7 +219,7 @@
         </div>
     </div>
 
-    <div class="info-card" id="ejemplo">
+    <div class="info-card" id="ejemplo" data-category="ejemplos">
         <div class="card-header">
             <h2>Ejemplo del Método</h2>
             <span class="toggle-icon">▼</span>
@@ -250,7 +256,7 @@ print(f"Diferencia: {abs(math.pi -
         </div>
     </div>
 
-     <div class="info-card" id="limitaciones">
+     <div class="info-card" id="limitaciones" data-category="ejemplos">
         <div class="card-header">
             <h2>Consideraciones Finales</h2>
             <span class="toggle-icon">▼</span>
