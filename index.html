@@ -220,41 +220,40 @@
     </div>
 
     <div class="info-card" id="ejemplo" data-category="ejemplos">
-        <div class="card-header">
-            <h2>Ejemplo del Método</h2>
-            <span class="toggle-icon">▼</span>
-        </div>
-        <img src="https://placehold.co/600x360/f9a8d4/1f2937?text=Ejemplos" alt="Imagen abstracta para Ejemplos" class="card-image" onerror="this.style.display='none'">
-        <div class="card-content-wrapper">
-            <div class="card-content">
-                <p>Este es un ejemplo en Python para estimar el valor de π utilizando el Método de Monte Carlo. Puedes copiar y ejecutar este código en un entorno de Python:</p>
-                <pre><code class="language-python">
-import random
-import math
-
-
-for _ in range(puntos_totales):
-    # Generar coordenadas (x, y) 
-    aleatorias entre -1 y 1
-    x = random.uniform(-1, 1)
-    y = random.uniform(-1, 1)
-    
-    dentro del círculo (x² + y² <= 1)
-    if x**2 + y**2 <= 1:
-        puntos_dentro += 1
-
-pi_estimado = 4 * puntos_dentro / 
-puntos_totales
-
-print(f"Estimación de π: {pi_estimado}")
-print(f"Valor real de π: {math.pi}")
-print(f"Diferencia: {abs(math.pi - 
-    pi_estimado)}")
-                </code></pre>
-                <p>Este ejemplo demuestra cómo el Método de Monte Carlo puede ser utilizado para aproximar valores matemáticos complejos.</p>
+    <div class="card-header">
+        <h2>Simulación Interactiva: Estimación de π</h2>
+        <span class="toggle-icon">▼</span>
+    </div>
+    <img src="https://placehold.co/600x360/f9a8d4/1f2937?text=Ejemplos" alt="Imagen abstracta para Ejemplos" class="card-image" onerror="this.style.display='none'">
+    <div class="card-content-wrapper">
+        <div class="card-content">
+            <p>¡Experimenta con el método! Genera puntos aleatorios y observa cómo se aproxima π:</p>
+            
+            <!-- Controles interactivos -->
+            <div class="simulation-controls">
+                <input type="number" id="puntos" min="100" max="100000" value="1000" placeholder="Número de puntos">
+                <button onclick="runSimulation()" class="interactive-button">Generar</button>
+            </div>
+            
+            <!-- Canvas para visualización -->
+            <canvas id="piCanvas" width="350" height="350"></canvas>
+            
+            <!-- Resultados -->
+            <div class="results">
+                <p>Puntos dentro del círculo: <span id="dentro">0</span></p>
+                <p>Estimación de π: <span id="piEst">0</span></p>
+                <p>Error: <span id="error">0%</span></p>
+            </div>
+            
+            <!-- Explicación mejorada -->
+            <div class="explicacion">
+                <h3>¿Cómo funciona?</h3>
+                <p>Al generar puntos aleatorios en un cuadrado de área \(4r^2\), la proporción de puntos dentro del círculo (área \(πr^2\)) aproxima π/4. Multiplicando por 4, obtenemos π.</p>
+                
             </div>
         </div>
     </div>
+</div>
 
      <div class="info-card" id="limitaciones" data-category="ejemplos">
         <div class="card-header">
